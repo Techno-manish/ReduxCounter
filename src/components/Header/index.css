@@ -1,0 +1,15 @@
+.navContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.navContainer button {
+    padding: 10px 20px;
+    border: 1px solid rgb(5, 65, 50);
+    background-color: rgb(21, 121, 96);
+    color: rgb(127, 238, 210);
+    margin-top: 10px;
+    cursor: pointer;
+}

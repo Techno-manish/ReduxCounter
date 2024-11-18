@@ -1,0 +1,11 @@
+.counterContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.counterValue {
+    text-align: center;
+    padding-top: 10vh;
+}
