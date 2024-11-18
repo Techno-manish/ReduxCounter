@@ -17,8 +17,8 @@ const Counter = () => {
       <h1 className="counterValue">Count: {count}</h1>
       <div className="counterContainer">
         <div>
-          <button onClick={() => dispatch(increment())}>Increment</button>
           <button onClick={() => dispatch(decrement())}>Decrement</button>
+          <button onClick={() => dispatch(increment())}>Increment</button>
         </div>
         <div>
           <input
@@ -27,7 +27,12 @@ const Counter = () => {
             value={val === 0 ? "" : val}
             onChange={(event) => setVal(event.target.value || 0)}
           />
-          <button onClick={() => dispatch(incrementByValue(Number(val)))}>
+          <button
+            onClick={() => {
+              dispatch(incrementByValue(Number(val)));
+              setVal(0);
+            }}
+          >
             Increase by count: {val}
           </button>
         </div>
