@@ -1,9 +1,9 @@
-import "./index.css"
+import "./index.css";
 
-const HomePage = () =>(
-    <div className="homeContainer">
-        <h1>Home</h1>
-    </div>
-)
+const HomePage = () => (
+  <div className="homeContainer">
+    <h1>Home</h1>
+  </div>
+);
 
-export default HomePage
+export default HomePage;
